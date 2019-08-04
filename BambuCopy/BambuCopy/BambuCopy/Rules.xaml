@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BambuCopy.Rules"
+             BackgroundColor="AntiqueWhite">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout Padding="20" 
+                         BackgroundColor="AntiqueWhite">
+                <Label Text="A Quiet Game of Bambu"
+                       FontSize="Large"
+                       FontAttributes="Bold"                   
+                       VerticalOptions="Start" 
+                       HorizontalOptions="Center" />
+                <Label Text="Requirements:"
+                       FontSize="Medium"
+                       FontAttributes="Bold" />
+                <Label Text="4 players. No partners." />
+                <Label Text="Deck of 32 cards: You will not need the 2 through 6 of each suit." />
+                <Label Text="Deal counter-clockwise, one card at a time." />
+                <Label Text="Score-Keeper: Whoever has the app." />
+                <Label Text="The game consists of 4 tours with 8 heands per tour.  Each player &quot;conducts&quot; a tour of 8 hands, where they choose the hand best suited to the cards they are dealt." />
+                <Label Text="Hands:"
+                       FontSize="Medium"
+                       FontAttributes="Bold" />
+                <StackLayout Padding="10">
+                    <Label Text="1. Bambu (the King of Hearts)" />
+                    <Label Text="2. Hearts" />
+                    <Label Text="3. Queens" />
+                    <Label Text="4. Tricks" />
+                    <Label Text="5. Last Trick" />
+                    <Label Text="6. All-in-one" />
+                    <Label Text="7. Domino" />
+                    <Label Text="8. Domino" />
+                    <Label Text="Each hand is played only once per tour (except Domino which is played twice)" />
+                </StackLayout>
+                <Label Text="Beginning:"
+                       FontSize="Medium"
+                       FontAttributes="Bold" />
+                <StackLayout Padding="5">
+                    <Label Text="- Each player selects a card from the deck at random.  Person with the highest card chooses which tour to conduct (1st through 4th). The rest of the tours are assigned counter-clockwise.  For example, if the high card chose to conduct the 4th tour, the person to their right would conduct the 1st, the next, 2nd, lastly 3rd." />
+                    <Label Text="- The value of the cards are in diminishing order: Ace, ten, king, queen, jack, nine, eight, seven. Except in Domino hands, where the ten reverts back between the jack and nine" />
+                    <Label Text="- Player to the right of the conductor shuffles, then passes to the right to be cut, then passes to the right to deal." />
+                    <Label Text="- Conductor calls the hand to be played, then the shuffler makes the opening lead.  Play progresses to the right (counter-clockwise)." />
+                    <Label Text="- &quot;Tricks&quot; must follow suit if possible, but you don't have to beat a played card if you prefer not to." />
+                </StackLayout>
+                <Label Text="General:"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Label Text="Hands are so named to indicate that you do not want to take the card(s) named.  Usually, a hand is scored a total of minus eight." />
+                <Label Text="Bambu:"
+                       TextColor="Red"
+                       FontSize="Small"
+                       FontAttributes="Bold" />
+                <StackLayout Padding="5">
+                    <Label Text="You do not want to take the trick containing the &quot;Bambu&quot; (King of Hearts).  Once the Bambu is taken in a trick the hand is over.  The player who took it recieves a score of (-8)" />
+                </StackLayout>
+                <Label Text="Hearts:"
+                       TextColor="Red"
+                       FontSize="Small"
+                       FontAttributes="Bold" />
+                <StackLayout Padding="5">
+                    <Label Text="You do not want to take any hearts. Each heart is worth (-1).  The total of eight hearts can be spread among all four players.  This could be the lesser of two evils when the conductor selects the hand." />
+                </StackLayout>
+                <Label Text="Queens:"
+                       TextColor="Red"
+                       FontSize="Small"
+                       FontAttributes="Bold" />
+                <StackLayout Padding="5">
+                    <Label Text="You do not want to take any queens.  Each queen is worth (-2).  Again, could be the lesser of two evils." />
+                </StackLayout>
+                <Label Text="Tricks:"
+                       TextColor="Red"
+                       FontSize="Small"
+                       FontAttributes="Bold" />
+                <StackLayout Padding="5">
+                    <Label Text="You do not want to take any tricks.  Each trick is worth (-1).  Here's that lesser of two evils thing again.  However, if you should take ALL tricks, you are awarded a score of (+40).  Rare, but it happens." />
+                </StackLayout>
+                <Label Text="Last Trick:"
+                       TextColor="Red"
+                       FontSize="Small"
+                       FontAttributes="Bold" />
+                <StackLayout Padding="5">
+                    <Label Text="You do not want to take the last trick.  It is worth (-8)." />
+                </StackLayout>
+                <Label Text="All-in-one:"
+                       TextColor="Red"
+                       FontSize="Small"
+                       FontAttributes="Bold" />
+                <StackLayout Padding="5">
+                    <Label Text="You do not want to take any of the above.  The point values are as given for each.  If you take all of the tricks, you receive a score of (-40)." />
+                </StackLayout>
+                <Label Text="Domino:"
+                       TextColor="Red"
+                       FontSize="Small"
+                       FontAttributes="Bold" />
+                <StackLayout Padding="5">
+                    <Label Text="The conductor calls the hand AND the card to begin with, i.e., &quot;Domino to the ten&quot;.  The first player to the right, who has a ten, can lay the card on the table.  The next player can play in a solitaire fashion, in suit, on that ten, building up or down, or may start another suit by laying out another ten.  Each player plays only one card per turn.  If you have a playable card, you must play it. If you get to the point where you can play an Ace, you can play it, and then may play all playable cards in hand.  The first person to play all their cards receives a score of (+20).  the second player to go out receives (+10).  No other points are awarded.  Remember, the conductor can choose to play this hand twice and the ten reverts back to its normal position." />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

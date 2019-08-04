@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BambuCopy.TourScoreSheet"
+             BackgroundColor="AntiqueWhite">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Tour Score" 
+                   FontAttributes="Bold"
+                   FontSize="Large"/>
+            <Grid HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="Center"
+                  BackgroundColor="Black"
+                  RowSpacing="1"
+                  ColumnSpacing="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height = "*"/>
+                    <RowDefinition Height = "*"/>
+                    <RowDefinition Height = "*"/>
+                    <RowDefinition Height = "*"/>
+                    <RowDefinition Height = "*"/>
+                    <RowDefinition Height = "*"/>
+                    <RowDefinition Height = "*"/>
+                    <RowDefinition Height = "*"/>
+                    <RowDefinition Height = "*"/>
+                    <RowDefinition Height = "*"/>                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width = "*"/>
+                    <ColumnDefinition Width = "*"/>
+                    <ColumnDefinition Width = "*"/>
+                    <ColumnDefinition Width = "*"/>
+                    <ColumnDefinition Width = "*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="HandNum" Text="" Grid.Row="0" Grid.Column="0" BackgroundColor="White"/>
+                <Label x:Name="PlayerName1" Grid.Row="0" Grid.Column ="1" BackgroundColor="White"/>
+                <Label x:Name="PlayerName2" Grid.Row="0" Grid.Column ="2" BackgroundColor="White"/>
+                <Label x:Name="PlayerName3" Grid.Row="0" Grid.Column ="3" BackgroundColor="White"/>
+                <Label x:Name="PlayerName4" Grid.Row="0" Grid.Column ="4" BackgroundColor="White"/>
+                <Label x:Name="Hand1" Text="Hand 1" Grid.Row="1" Grid.Column ="0" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell1" Grid.Row="1" Grid.Column ="1" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell2" Grid.Row="1" Grid.Column ="2" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell3" Grid.Row="1" Grid.Column ="3" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell4" Grid.Row="1" Grid.Column ="4" BackgroundColor="White"/>
+                <Label x:Name="Hand2" Text="Hand 2" Grid.Row="2" Grid.Column ="0" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell5" Grid.Row="2" Grid.Column ="1" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell6" Grid.Row="2" Grid.Column ="2" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell7" Grid.Row="2" Grid.Column ="3" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell8" Grid.Row="2" Grid.Column ="4" BackgroundColor="White"/>
+                <Label x:Name="Hand3" Text="Hand 3" Grid.Row="3" Grid.Column ="0" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell9" Grid.Row="3" Grid.Column ="1" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell10" Grid.Row="3" Grid.Column ="2" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell11" Grid.Row="3" Grid.Column ="3" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell12" Grid.Row="3" Grid.Column ="4" BackgroundColor="White"/>
+                <Label x:Name="Hand4" Text="Hand 4" Grid.Row="4" Grid.Column ="0" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell13" Grid.Row="4" Grid.Column ="1" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell14" Grid.Row="4" Grid.Column ="2" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell15" Grid.Row="4" Grid.Column ="3" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell16" Grid.Row="4" Grid.Column ="4" BackgroundColor="White"/>
+                <Label x:Name="Hand5" Text="Hand 5" Grid.Row="5" Grid.Column ="0" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell17" Grid.Row="5" Grid.Column ="1" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell18" Grid.Row="5" Grid.Column ="2" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell19" Grid.Row="5" Grid.Column ="3" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell20" Grid.Row="5" Grid.Column ="4" BackgroundColor="White"/>
+                <Label x:Name="Hand6" Text="Hand 6" Grid.Row="6" Grid.Column ="0" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell21" Grid.Row="6" Grid.Column ="1" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell22" Grid.Row="6" Grid.Column ="2" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell23" Grid.Row="6" Grid.Column ="3" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell24" Grid.Row="6" Grid.Column ="4" BackgroundColor="White"/>
+                <Label x:Name="Hand7" Text="Hand 7" Grid.Row="7" Grid.Column ="0" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell25" Grid.Row="7" Grid.Column ="1" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell26" Grid.Row="7" Grid.Column ="2" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell27" Grid.Row="7" Grid.Column ="3" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell28" Grid.Row="7" Grid.Column ="4" BackgroundColor="White"/>
+                <Label x:Name="Hand8" Text="Hand 8" Grid.Row="8" Grid.Column ="0" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell29" Grid.Row="8" Grid.Column ="1" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell30" Grid.Row="8" Grid.Column ="2" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell31" Grid.Row="8" Grid.Column ="3" BackgroundColor="White"/>
+                <Label x:Name="ScoreCell32" Grid.Row="8" Grid.Column ="4" BackgroundColor="White"/>
+                <Label x:Name="SubTotalHead " Text="Sub Totals" Grid.Row="9" Grid.Column ="0" BackgroundColor="White"/>
+                <Label x:Name="ScoreCellSub1" Grid.Row="9" Grid.Column ="1" BackgroundColor="White"/>
+                <Label x:Name="ScoreCellSub2" Grid.Row="9" Grid.Column ="2" BackgroundColor="White"/>
+                <Label x:Name="ScoreCellSub3" Grid.Row="9" Grid.Column ="3" BackgroundColor="White"/>
+                <Label x:Name="ScoreCellSub4" Grid.Row="9" Grid.Column ="4" BackgroundColor="White"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Continue" 
+                        BackgroundColor="White" 
+                        Grid.Column="1"
+                        Clicked="GoToPage_OnClicked">
+                </Button>
+                <Button Text="Hand Tracker" 
+                        BackgroundColor="White" 
+                        Grid.Column="0"
+                        Clicked="GoToHandTracker_OnClicked">
+                </Button>
+            </Grid>            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

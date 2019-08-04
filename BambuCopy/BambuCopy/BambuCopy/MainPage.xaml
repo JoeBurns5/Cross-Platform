@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BambuCopy"
+             x:Class="BambuCopy.MainPage"
+             BackgroundColor="AntiqueWhite">
+
+    <StackLayout BackgroundColor="AntiqueWhite" 
+                 Padding="10" 
+                 VerticalOptions="Center">
+        <Label Text="A Quiet Game of Bambu:"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+        <Label Text="Score Sheet"
+               FontSize="Medium"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+        
+        <Button Text="Rules"
+                BackgroundColor="White"
+                Clicked="GoToRules_OnClicked"
+                HorizontalOptions="Center"
+                WidthRequest="150"/>
+
+        <Button Text="New Game"
+                BackgroundColor="White"
+                Clicked="NewGame_OnClicked"
+                HorizontalOptions="Center"
+                WidthRequest="150"/>
+
+        <!--<Button Text="Continue Game"
+                BackgroundColor="White"
+                Clicked="ContinueGame_OnClicked"
+                HorizontalOptions="Center"
+                WidthRequest="150"/>-->
+
+        <Button Text="Information"
+                BackgroundColor="White"
+                Clicked="GoToInfo_OnClicked"
+                HorizontalOptions="Center"
+                WidthRequest="150"/>
+    </StackLayout>
+
+</ContentPage>

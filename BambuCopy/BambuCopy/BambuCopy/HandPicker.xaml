@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BambuCopy.HandPicker"
+             BackgroundColor="AntiqueWhite">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Conductor...Choose the hand to be played:"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="Conductor"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"/>
+            <Grid VerticalOptions="Start"
+                  HorizontalOptions="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Text="Rules"
+                        BackgroundColor="White"
+                        WidthRequest="150"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalOptions="Center"
+                        Clicked="GoToRules_OnClicked"/>
+                <Button Text="Hand Tracker"
+                        BackgroundColor="White"
+                        WidthRequest="150"
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        HorizontalOptions="Center"
+                        Clicked="GoToHandTracker_OnClicked"/>
+            </Grid>
+            <Picker x:Name="SelectHand"
+                    Title="Hand:"
+                    HorizontalOptions="Center"
+                    SelectedIndexChanged="DominoSelected"/>
+            <Picker x:Name="DominoToThe"
+                    Title="To the..." 
+                    HorizontalOptions="Center"
+                    IsVisible="False"/>
+            <Button Text="Confirm"
+                    BackgroundColor="White"
+                    WidthRequest="150"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Clicked="GoToHandScore_OnClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

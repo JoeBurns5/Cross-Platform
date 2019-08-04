@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BambuCopy.HandScore"
+             BackgroundColor="AntiqueWhite">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="AntiqueWhite" 
+                     Padding="10" 
+                     VerticalOptions="End">
+            <!-- Place new controls here -->
+            <Label x:Name="HandName"
+                   FontAttributes="Bold"
+                   FontSize="Large"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label  x:Name="handScoring"
+                        VerticalOptions="Center"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        TextColor="Red"/>
+                <TableView VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Grid.Column="1"
+                           Grid.Row="0">
+                    <TableRoot>
+                        <TableSection x:Name="Player1">
+                            <EntryCell x:Name="P1Score"
+                                       Label="Score" 
+                                       Height="1"
+                                       Placeholder="0"/>
+                        </TableSection>
+                        <TableSection x:Name="Player2">
+                            <EntryCell x:Name="P2Score"
+                                       Label="Score" 
+                                       Height="1"
+                                       Placeholder="0" />
+                        </TableSection>
+                        <TableSection x:Name="Player3">
+                            <EntryCell x:Name="P3Score"
+                                       Label="Score" 
+                                       Height="1"
+                                       Placeholder="0" />
+                        </TableSection>
+                        <TableSection x:Name="Player4">
+                            <EntryCell x:Name="P4Score"
+                                       Label="Score" 
+                                       Height="1"
+                                       Placeholder="0" />
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+            </Grid>
+            <Grid VerticalOptions="End"
+                  HorizontalOptions="Center"
+                  HeightRequest="100">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Text="Confirm Score" 
+                        BackgroundColor="White" 
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Clicked="GoToPage_OnClicked"/>
+                <Button Text="Rules" 
+                        BackgroundColor="White" 
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Clicked="GoToRules_OnClicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

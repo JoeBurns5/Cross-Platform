@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BambuCopy.PlayerEntry"
+             BackgroundColor="AntiqueWhite">
+    <ContentPage.Content>        
+        <StackLayout>
+            <Label Text="Enter Player Names"
+                   FontSize="Large"
+                   HorizontalOptions="CenterAndExpand" />
+            <Label Text="counter-clockwise"
+                   HorizontalOptions="Center"/>
+            <Grid VerticalOptions="CenterAndExpand"
+                  HorizontalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Entry Grid.Column="2"
+                       Grid.Row="1"
+                       Placeholder="Player 1"
+                       Unfocused="EntryPlayer1_Unfocused"/>
+                <Entry Grid.Column="1" 
+                       Grid.Row="2" 
+                       Placeholder="Player 2"
+                       Unfocused="EntryPlayer2_Unfocused"/>
+                <Entry Grid.Column="2"
+                       Grid.Row ="3" 
+                       Placeholder="Player 3"
+                       Unfocused="EntryPlayer3_Unfocused"/>
+                <Entry Grid.Column="3"
+                       Grid.Row="2"
+                       Placeholder="Player 4"
+                       Unfocused="EntryPlayer4_Unfocused"/>
+            </Grid>
+            <Button VerticalOptions="End"
+                    Text="Continue"
+                    BackgroundColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="GoToConductorDraw_OnClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

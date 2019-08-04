@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BambuCopy.FinalScore"
+             BackgroundColor="AntiqueWhite">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Final Score"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Grid HorizontalOptions="Center"
+                  VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width = "150"/>
+                    <ColumnDefinition Width = "150"/>
+                    <ColumnDefinition Width = "150"/>
+                    <ColumnDefinition Width = "150"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="Player1" Grid.Row="0" Grid.Column ="0"
+                       HorizontalOptions="Center"/>
+                <Label x:Name="Player2" Grid.Row="0" Grid.Column ="1"
+                       HorizontalOptions="Center"/>
+                <Label x:Name="Player3" Grid.Row="0" Grid.Column ="2"
+                       HorizontalOptions="Center"/>
+                <Label x:Name="Player4" Grid.Row="0" Grid.Column ="3"
+                       HorizontalOptions="Center"/>
+                <Label x:Name="ScoreP1" Grid.Row="1" Grid.Column ="0" 
+                       HorizontalOptions="Center"/>
+                <Label x:Name="ScoreP2" Grid.Row="1" Grid.Column ="1"
+                       HorizontalOptions="Center"/>
+                <Label x:Name="ScoreP3" Grid.Row="1" Grid.Column ="2"
+                       HorizontalOptions="Center"/>
+                <Label x:Name="ScoreP4" Grid.Row="1" Grid.Column ="3"
+                       HorizontalOptions="Center"/>
+            </Grid>
+
+            <Label x:Name="Winner"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"/>
+
+            <Button Text="Main Menu"
+                    x:Name="GoToMain"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"
+                    VerticalOptions="End"
+                    Clicked="GoToMain_OnClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
